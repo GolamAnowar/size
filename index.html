@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <!-- or -->
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="upload-box">
+            <input type="file" class="file-input" hidden>
+            <img src="upload-regular-240.png" alt="">
+            <p>browse file to upload</p>
+        </div>
+        <div class="content">
+            <div class="sizes">
+                <div class="width">
+                    <h3>width</h3>
+                    <input type="number">
+                </div>
+                <div class="height">
+                    <h3>height</h3>
+                    <input type="number">
+                </div>
+            </div>
+            <div class="checkboxes">
+                <div class="ratio">
+                    <input type="checkbox" id="ratio" checked>
+                    <label for="ratio">lock aspect ratio</label>
+                </div>
+                <div class="quality">
+                    <input type="checkbox" id="quality">
+                    <label for="quality">reduce quality</label>
+                </div>
+            </div>
+            <button>download image</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
